@@ -1,13 +1,25 @@
 import React from 'react';
 import './App.css';
+//----------------------------------------------------//
+//----- import react router components to use it -----//
+//----------------------------------------------------//
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-//--------------------PAGES-------------------------------//
+//--------------------------------------------//
+//----- import Pages for the react-router-----//
+//--------------------------------------------//
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import Products from './pages/Product';
+
+//--------------------------------------------//
+//----- Create Ouer Main App Function --------//
+//--------------------------------------------//
 function App() {
   return (
+    //-------------------------------------------------------------------------//
+    //----- put all the content of the page inside a router Component ---------//
+    //-------------------------------------------------------------------------//
     <Router>
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -46,7 +58,7 @@ function App() {
             </ul>
           </div>
         </nav>
-
+        {/* define the navegation routes and give each one its linke */}
         <Route path="/" component={Home} exact></Route>
         <Route path="/cart" component={Cart}></Route>
         <Route path="/products" component={Products}></Route>
@@ -54,5 +66,7 @@ function App() {
     </Router>
   );
 }
-
+//-------------------------------------------------------------------------//
+//----- export oure component to used it somewhere in this web site--------//
+//-------------------------------------------------------------------------//
 export default App;
