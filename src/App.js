@@ -1,8 +1,11 @@
 import React from 'react';
 import './App.css';
-import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
+//--------------------PAGES-------------------------------//
+import Home from './pages/Home';
+import Cart from './pages/Cart';
+import Products from './pages/Product';
 function App() {
   return (
     <Router>
@@ -26,25 +29,27 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/">
                   Home <span className="sr-only">(current)</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/products">
                   Products
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/cart">
                   Cart
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </nav>
 
-        <Route path="/" component={Home}></Route>
+        <Route path="/" component={Home} exact></Route>
+        <Route path="/cart" component={Cart}></Route>
+        <Route path="/products" component={Products}></Route>
       </div>
     </Router>
   );
