@@ -1,24 +1,39 @@
 import React from 'react';
 import OneProduct from '../Components/OneProduct';
+import getAll from '../api/products';
 
-export default function Product() {
-  return (
-    <div>
-      <h1> Product</h1>
-      <div className="row">
-        <div className={'col-4'}>
-          <OneProduct />
+export default class Product extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      products: []
+    };
+    // console.log(getAll());
+  }
+  componentDidMount() {
+    //------------------------------------------//
+    //---------- getting Data from Data.json----//
+    //------------------------------------------//
+    getAll().then(result => {
+      this.setState({
+        products: result
+      });
+    });
+  }
+  render() {
+    var arrayOfProducts = [];
+    this.state.products.forEach((value, index) => {
+      arrayOfProducts.push(
+        <div className={'col-4'} key={index}>
+          <OneProduct data={value} key={value.id} />
         </div>
-        <div className={'col-4'}>
-          <OneProduct />
-        </div>
-        <div className={'col-4'}>
-          <OneProduct />
-        </div>
-        <div className={'col-4'}>
-          <OneProduct />
-        </div>
+      );
+    });
+    return (
+      <div>
+        <h1> Product</h1>
+        <div className="row">{arrayOfProducts}</div>
       </div>
-    </div>
-  );
+    );
+  }
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Siberian Cat Breed",
+    "price": 100,
+    "image": "https://urbanfragment.files.wordpress.com/2012/06/beauty-white-cat.jpg",
+    "description": "This friendly and affectionate feline will follow you around as you go about your day, and purr in your lap as you comb her coat. Siberian Cats love their humans but aren’t shy around strangers.They’re an active and playful breed, enjoying games like fetch and learning tricks that stimulate them mentally. Their athleticism allows them to climb and perch themselves from the highest heights. This bold cat loves to play with water and gets along well with other pets and children."
+  },
+  {
+    "id": 2,
+    "name": "Chartreux Cat Breed",
+    "price": 2055,
+    "image": "https://media.nature.com/w700/magazine-assets/d41586-019-02878-w/d41586-019-02878-w_17193236.jpg",
+    "description": "Often called the smiling cat of France, the Chartreux has a sweet, smiling expression. This sturdy, powerful cat has a distinctive blue coat with a resilient wooly undercoat. Historically known as fine mousers with strong hunting instincts, the Chartreux enjoys toys that move. This is a slow-maturing breed that reaches adulthood in three to five years.\n A loving, gentle companion, the Chartreux forms a close bond with her family."
+  },
+  {
+    "id": 3,
+    "name": "Birman Cat Breed",
+    "price": 3000,
+    "image": "https://www.medicalnewstoday.com/content/images/articles/327/327448/maine-coon-cat.jpg",
+    "description": "With her marvelous, social personality, the Birman doesn’t like being the only animal in the house. She is active and playful but quiet if you are busy. This healthy, long-lived breed has an outstanding semi-long silky coat that does not mat and a luxurious,\n long bottle-brush tail. Brilliant blue, almost-round eyes are prominent features of her sweet expression."
+  },
+  {
+    "id": 4,
+    "name": "Egyptian Mau Cat",
+    "price": 250,
+    "image": "https://chooseycats.com/wp-content/uploads/2018/08/Best-cat-food-for-Egyptian-Mau.jpg",
+    "description": "The Egyptian Mau is fiercely devoted to her humans and vocally shows signs of happiness and affection by meowing in a pleasant voice. She’ll also slowly swish her tail and knead with her front paws. She loves to display her hunting skills by chasing and retrieving a toy. As a moderate- to highly active breed, you may find her on top of your refrigerator or bookshelves."
+  },
+  {
+    "id": 3,
+    "name": "Siamese Cat Breed",
+    "price": 3000,
+    "image": "https://siameseofday.com/wp-content/uploads/2019/07/adorable-animal-blur-326875.jpg",
+    "description": "Siamese Cats are incredibly social, intelligent and vocal—they’ll talk to anyone who wants to listen, and even those who don’t. They also play well with other cats, dogs and children. In fact, they thrive on companionship, so it’s a good idea to get them a playmate to interact with throughout the day. Although they’re active and curious, they also love curling up on their human’s lap or snuggling up next to them in bed."
+  },
+  {
+    "id": 4,
+    "name": "Turkish Van Cat Breed",
+    "price": 2530,
+    "image": "https://thedutifulcat.com/wp-content/uploads/2018/11/The-Turkish-Van-Cat-Breed-Image.jpg",
+    "description": "The beautiful Turkish Van is distinguished by her chalk-white body and colored markings on the head and long, plumed tail. This curious feline has powerful hind legs that allow her to jump on otherwise hard-to-reach spaces. The sweet, loving breed likes to be involved in whatever is going on and enjoys curling up on a lap. A slow-maturing breed, the Turkish Van takes three to five years to reach maturity."
+  }
+]
