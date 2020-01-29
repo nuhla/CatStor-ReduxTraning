@@ -21,6 +21,9 @@ export default class Product extends React.Component {
     });
   }
   render() {
+    //--------------------------------------------------------------------------------------------------//
+    //--------- loop in the array to creat a product component and pass props to its contents ----------//
+    //--------------------------------------------------------------------------------------------------//
     var arrayOfProducts = [];
     this.state.products.forEach((value, index) => {
       arrayOfProducts.push(

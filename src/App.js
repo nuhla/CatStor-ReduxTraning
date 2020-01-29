@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import Products from './pages/Product';
+import ProductPage from './pages/ProductPage';
 
 //--------------------------------------------//
 //----- Create Ouer Main App Function --------//
@@ -62,6 +63,7 @@ function App() {
         <Route path="/" component={Home} exact></Route>
         <Route path="/cart" component={Cart}></Route>
         <Route path="/products" component={Products}></Route>
+        <Route path="/ProductPage/:id" component={ProductPage}></Route>
       </div>
     </Router>
   );

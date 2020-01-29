@@ -18,7 +18,7 @@ export default class OneProduct extends React.Component {
           <p className="card-text">{this.props.data.description}</p>
           <p className="card-text"> Price :{this.props.data.price} $</p>
           <a
-            href="https://imgix.bustle.com/mic/45a1aaa7ba15f32f0a7b805eb6a36e5b1d28bc6227fc72e24bc32e355e418ee8.jpg?w=1020&h=576&fit=crop&crop=faces&auto=format&q=70"
+            href={'/ProductPage/' + this.props.data.id}
             className="btn btn-primary"
           >
             Details
