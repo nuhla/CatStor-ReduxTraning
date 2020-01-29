@@ -1,7 +1,14 @@
 import Prouducts from './Data';
-export default function getAll() {
+export function getAll() {
   return Promise.resolve(Prouducts);
 }
 export function getById(id) {
-  return Prouducts.find(item => item.id === id);
+  console.log('in getById ', parseInt(id));
+  const product = Prouducts.find(element => element.id === parseInt(id));
+  return Promise.resolve(product);
 }
+
+export default {
+  getAll,
+  getById
+};

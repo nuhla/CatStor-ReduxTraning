@@ -1,6 +1,6 @@
 import React from 'react';
 import OneProduct from '../Components/OneProduct';
-import getAll from '../api/products';
+import { getAll } from '../api/products';
 
 export default class Product extends React.Component {
   constructor(props) {
@@ -8,7 +8,6 @@ export default class Product extends React.Component {
     this.state = {
       products: []
     };
-    // console.log(getAll());
   }
   componentDidMount() {
     //------------------------------------------//
