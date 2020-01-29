@@ -38,8 +38,21 @@ export default class ProductPage extends React.Component {
     //---- getting the value form the input by handling--------//
     //--------------- input onChange Method -------------------//
     //---------------------------------------------------------//
+    let quantutyVariable = 0;
+
+    //----------------------------------------------------------//
+    //--------- if the quntity is larger than 0 ---------------//
+    //----------------------------------------------------------//
+    quantutyVariable = e.target.value;
+    //----------------------------------------------------------//
+    //--------- if the quntity is smaller than 0 ---------------//
+    //----------------------------------------------------------//
+    if (e.target.value < 0) {
+      quantutyVariable = 0;
+      e.target.value = 0;
+    }
     this.setState({
-      quantuty: e.target.value
+      quantuty: quantutyVariable
     });
   }
 
@@ -65,13 +78,16 @@ export default class ProductPage extends React.Component {
             <h3>{this.state.product.name}</h3>
             <p className="card-text">{this.state.product.description}</p>
             <p className="card-text"> Price :{this.state.product.price} $</p>
-
             <input
               type="number"
               onChange={this.handelQuantityChange.bind(this)}
             />
             <br />
             <br />
+            <p>
+              {'Total :' + this.state.quantuty * this.state.product.price + '$'}
+            </p>
+
             <button className="btn btn-primary"> Add to Cart</button>
           </div>
         </div>
